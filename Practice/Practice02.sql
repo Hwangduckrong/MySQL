@@ -21,3 +21,11 @@ select  department_id,
         min_salary
 from employees,jobs
 group by employees.department_id=jobs.department_id;
+
+
+select e.first_name,
+	   d.department_name,
+       e.department_id,
+       d.department_id
+from employees e inner join departments d
+on e.department_id = d.department_id;    
