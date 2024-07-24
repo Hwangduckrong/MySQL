@@ -30,7 +30,7 @@ select job_id,
         min(salary)
 from employees
 group by job_id
-order by min(salary) desc,round(avg(salary), 0) asc;	
+order by min(salary) desc,round(avg(salary), 0) asc;-(다시 생각해볼것)	
 
 /*문제 6*/
 select date_format(min(hire_date), '%Y-%m-%d %W') 
